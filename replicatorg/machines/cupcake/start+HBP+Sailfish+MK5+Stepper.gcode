@@ -2,7 +2,7 @@
 (This file is for a MakerBot Cupcake CNC with a Heated build platform)
 M103 (disable RPM)
 M73 P0 (enable build progress)
-M104 S250 T0 (Extruder Temperature to 250 Celsius)
+M104 S220 T0 (Extruder Temperature to 250 Celsius)
 M109 S110 T0 (Heated Platform Temperature to 110 Celsius)
 M107 (fan off)
 G21 (Metric FTW)
