@@ -33,7 +33,7 @@
 			(Turn off steppers after a build.)
 			M18
 		</cooldown>
-        <bookend start="machines/cupcake/start+HBP+Sailfish+MK5+Stepper.gcode" end="machines/cupcake/end+Sailfish.gcode"/>
+        <bookend start="machines/jeremy-cupcake/start+HBP+Sailfish+MK5+Stepper.gcode" end="machines/jeremy-cupcake/end+Sailfish.gcode"/>
 	</machine>
 	<machine>
 		<name>Jeremy's Cupcake + QU-BD Extruder</name>
@@ -67,6 +67,6 @@
 			(Turn off steppers after a build.)
 			M18
 		</cooldown>
-        <bookend start="machines/cupcake/start+HBP+Sailfish+QUBD.gcode" end="machines/cupcake/end+Sailfish.gcode"/>
+        <bookend start="machines/jeremy-cupcake/start+HBP+Sailfish+QUBD.gcode" end="machines/jeremy-cupcake/end+Sailfish.gcode"/>
 	</machine>
 </machines>
