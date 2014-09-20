@@ -19,7 +19,11 @@
 			<axis id="a" length="100000" maxfeedrate="7200" stepspermm="70.66"/>
 		</geometry>
 		<tools>
-			<!-- motor is 200 full steps per revolution, with 1/2 microstepping, so 400 steps per revolution -->
+			<!--
+				motor is 200 full steps per revolution, so
+				1/2 microstepping = 400 steps
+				1/8 microstepping = 1600 steps
+			-->
 			<tool name="Mk5/6/6+" type="extruder" material="abs" fan="true" valve="false" heater="true"  heatedplatform="true" motor_steps="400" stepper_axis="a" index="0" motor="true"/>
 		</tools>
 		<clamps></clamps>
@@ -46,15 +50,21 @@
 			<!-- Gen4 stepper drivers have  `stepspermm="47.069852"` -->
 
 			<!--
+				The center of the filament when it contacts the drive gear is at 5.455 in radius from center. For every full rotation of the drive gear will feed 34.257mm of filament. As stated before for a standard 200 step stepper (like what is included with our kits), each full step moves .17137 mm of filament or 5.83519 steps per mm. Multiply that by your microstepping setting and it should move the correct amount of filament.
+				
 				qubd = 5.83519 stepspermm, so at
 				1/2 microstepping = 11.67038
 				1/8 microstepping = 46.68152
 			-->
-			<axis id="a" length="100000" maxfeedrate="7200" stepspermm="11.67038"/>
+			<axis id="a" length="100000" maxfeedrate="7200" stepspermm="46.68152"/>
 		</geometry>
 		<tools>
-			<!-- motor is 200 full steps per revolution, with 1/2 microstepping, so 400 steps per revolution -->
-			<tool name="Mk5/6/6+" type="extruder" material="abs" fan="true" valve="false" heater="true"  heatedplatform="true" motor_steps="400" stepper_axis="a" index="0" motor="true"/>
+			<!--
+				motor is 200 full steps per revolution, so
+				1/2 microstepping = 400 steps
+				1/8 microstepping = 1600 steps
+			-->
+			<tool name="Mk5/6/6+" type="extruder" material="abs" fan="true" valve="false" heater="true"  heatedplatform="true" motor_steps="1600" stepper_axis="a" index="0" motor="true"/>
 		</tools>
 		<clamps></clamps>
 		<driver name="makerbot4gsailfish">

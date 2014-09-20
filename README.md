@@ -23,11 +23,22 @@ Select the legacy GCode generator:
 
 Generating GCode
 
-    Slicing Profile: SF35-cupcake-HBP
-    Use Raft/Support: FALSE
-    Use support material: None
-    Use default start/end gcode: TRUE
-    Use Print-O-Matic (stepper extruders only): FALSE
+- Slicing Profile: `tom-defaults-qubd`
+- Use Raft/Support: `FALSE`
+- Use support material: `None`
+- Use default start/end gcode: `TRUE`
+- Use Print-O-Matic (stepper extruders only): `TRUE`
+	- Settings
+		- Object infill: `100`
+		- Layer height: `.27`
+		- Number of shells: `1`
+		- Feedrate (mm/s): `80`
+		- Travel feedrate: `100`
+		- Print temperature: `220`
+	- Plastic
+		- Filament diameter (mm): `1.84` (for QU-BD)
+	- Extruder
+		- Nozzle Diameter (mm): `.4` (for QU-BD)
 
 
 Printing with ReplicatorG 39
